@@ -4,7 +4,6 @@ import Home from '@/views/Home'
 import Wall from "@/views/Wall";
 import Registration from "@/views/Registration";
 import Login from "@/views/Login";
-import Hello from "@/views/Hello";
 import Users from "@/views/Users";
 
 Vue.use(Router)
@@ -23,10 +22,6 @@ export default new Router({
         {
             path: '/login',
             component: Login
-        },
-        {
-            path: '/hello',
-            component: Hello
         },
         {
             path: '/users',
