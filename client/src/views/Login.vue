@@ -9,7 +9,8 @@
             <input @blur="formLog.login.$touch()"
                    :class="{'is-invalid': formLog.login.$error}"
                    v-model="formLog.login"
-                   type="text" class="form-control" id="login">
+                   type="text" class="form-control" id="login"
+                   placeholder="Username">
           </div>
 
           <div class="form-group">
@@ -17,7 +18,8 @@
             <input @blur="formLog.password.$touch()"
                    :class="{'is-invalid': formLog.password.$error}"
                    v-model="formLog.password"
-                   type="password" class="form-control" id="password">
+                   type="password" class="form-control" id="password"
+                   placeholder="Password">
           </div>
 
           <router-link to="/">
