@@ -4,7 +4,7 @@
       <UserItem
           v-for="(user,i) of users"
           v-bind:user="user"
-          v-bind:key="user"
+          v-bind:key="i"
           v-bind:index="i"
       />
     </ul>

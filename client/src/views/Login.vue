@@ -6,16 +6,16 @@
 
           <div class="form-group">
             <label for="login">Имя</label>
-            <input @blur="$v.formLog.login.$touch()"
-                   :class="{'is-invalid': $v.formLog.login.$error}"
+            <input @blur="formLog.login.$touch()"
+                   :class="{'is-invalid': formLog.login.$error}"
                    v-model="formLog.login"
                    type="text" class="form-control" id="login">
           </div>
 
           <div class="form-group">
             <label for="password">Пароль</label>
-            <input @blur="$v.formLog.password.$touch()"
-                   :class="{'is-invalid': $v.formLog.password.$error}"
+            <input @blur="formLog.password.$touch()"
+                   :class="{'is-invalid': formLog.password.$error}"
                    v-model="formLog.password"
                    type="password" class="form-control" id="password">
           </div>
@@ -23,7 +23,7 @@
           <router-link to="/">
             <button class="btn btn-primary mt-2">Home</button>
           </router-link>
-          <button type="submit" class="btn btn-primary mt-2">Вход</button>
+          <button id="login-button" type="submit" class="btn btn-primary mt-2">Вход</button>
         </form>
       </div>
     </div>
