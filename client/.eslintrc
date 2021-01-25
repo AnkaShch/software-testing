@@ -1,0 +1,19 @@
+{
+  "env": {
+    "jest": true,
+    "cypress/globals": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 6
+  },
+  "plugins": [
+    "cypress"
+  ],
+  "rules": {},
+  "extends": [
+    "plugin:vue/essential",
+    "eslint:recommended"
+  ]
+}
