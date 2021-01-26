@@ -1,4 +1,4 @@
-package com.oldVK.main.codebase;
+package com.oldVK.main.utils;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
