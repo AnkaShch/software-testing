@@ -31,6 +31,7 @@ export function getPosts(id, cb) {
                 .get(`http://localhost:8080/api/GetPosts?user_id=${id}`)
                 .then(response => {
                     response.data.forEach(data => {
+                        console.log(data)
                         let post = {author: data.author_name, text: data.message}
                         cb(null, post)
                     })

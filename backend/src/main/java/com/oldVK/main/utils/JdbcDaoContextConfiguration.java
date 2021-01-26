@@ -16,8 +16,8 @@ public class JdbcDaoContextConfiguration {
     @Bean
     public UserDao userDao(DataSource dS) { return new UserJdbcDao(dS); }
 
-//    @Bean
-//    public PostDao postDao(DataSource dS) {return new PostJdbcDao(dS); }
+    @Bean
+    public PostDao postDao(DataSource dS) {return new PostJdbcDao(dS); }
 
     @Bean
     public DataSource dataSource() {
