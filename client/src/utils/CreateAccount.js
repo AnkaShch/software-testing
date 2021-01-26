@@ -16,8 +16,9 @@ export async function CreateAccount(user_name, user_password) {
             .then(response => {
                 console.log(response)
                 response.json().then(data => {
-                    setCookie("user_id", data.id)
-                    window.location = '/user/' + data.id
+                    console.log(data)
+                    setCookie("user_id", data)
+                    window.location = '/user/' + data
                 })
             })
     } catch (err) {

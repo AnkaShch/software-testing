@@ -15,10 +15,9 @@ export async function Login(user_name, user_password) {
             }),
         }).then(response => {
             response.json().then(data => {
-                if (data.id !== undefined) {
-                    setCookie("user_id", data.id)
-                    window.location = '/user/' + data.id
-                }
+                console.log(data)
+                setCookie("user_id", data)
+                window.location = '/user/' + data
             });
         });
     } catch (err) {

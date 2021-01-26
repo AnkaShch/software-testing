@@ -52,6 +52,7 @@ export default {
   },
   methods: {
     registerUser() {
+      console.log(this.$route.query)
       CreateAccount(this.formReg.login, this.formReg.password)
     }
   },
