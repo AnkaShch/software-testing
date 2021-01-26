@@ -1,20 +1,23 @@
 package com.oldVK.main.db;
 
-import com.oldVK.main.models.User;
-import org.junit.Test;
-import org.testcontainers.containers.MySQLContainer;
-
+import com.oldVK.main.dao.PostDao;
+import com.oldVK.main.dao.PostJdbcDao;
+import com.oldVK.main.dao.UserDao;
+import com.oldVK.main.dao.UserJdbcDao;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.testcontainers.containers.MySQLContainer;
 
 import javax.sql.DataSource;
-import java.sql.SQLException;
 
-import static org.springframework.test.util.AssertionErrors.assertNotNull;
+import static org.junit.Assert.assertEquals;
 
+
+@RunWith(SpringJUnit4ClassRunner.class)
 public class DBTest {
-    public DBTest() throws SQLException {
-    }
 
     public DataSource dataSource() {
         MySQLContainer<?> mysql = new MySQLContainer<>("mysql:5.6.42");
@@ -28,20 +31,16 @@ public class DBTest {
 
         return new HikariDataSource(hikariConfig);
     }
-//    private UserDao userDao = new UserJdbcDao(dataSource());
-    private DataSource db = dataSource();
+
+    private UserDao userDao = new UserJdbcDao(dataSource());
+    private PostDao postDao = new PostJdbcDao(dataSource());
 
     @Test
-    public void testAddUser() throws SQLException {
-        assertNotNull("User DAO is null.",db);
-        String testerLogin = "Tester";
-        String testerName = "123123";
-        User tester = new User(testerLogin, testerName);
-//        tester.addUser(db);
-
-//        List<User> result = userDao.getUser("tester");
-//
-//        assertEquals(1, result.size());
-//        assertEquals("Tester", result.get(0).getName());
+    public void testAddUser() {
+        String login = "tester";
+        String password = "123456";
+        userDao.addUser(login, password);
+        int userId = userDao.getUser(login, password);
+        assertEquals(1, userId);
     }
 }
