@@ -1,4 +1,4 @@
-package com.socian_network.main.codebase;
+package com.oldVK.main.codebase;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

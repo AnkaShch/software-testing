@@ -1,6 +1,6 @@
-package com.socian_network.main.models;
+package com.oldVK.main.models;
 
-import com.socian_network.main.codebase.database;
+import com.oldVK.main.codebase.database;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

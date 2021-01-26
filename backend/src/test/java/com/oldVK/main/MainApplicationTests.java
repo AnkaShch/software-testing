@@ -1,4 +1,4 @@
-package com.socian_network.main;
+package com.oldVK.main;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

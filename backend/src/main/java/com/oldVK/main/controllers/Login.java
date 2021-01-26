@@ -1,8 +1,8 @@
-package com.socian_network.main.controllers;
+package com.oldVK.main.controllers;
 
 import com.google.gson.Gson;
-import com.socian_network.main.codebase.cookie;
-import com.socian_network.main.models.User;
+import com.oldVK.main.codebase.cookie;
+import com.oldVK.main.models.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;

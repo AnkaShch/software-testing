@@ -1,4 +1,4 @@
-package com.socian_network.main.codebase;
+package com.oldVK.main.codebase;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

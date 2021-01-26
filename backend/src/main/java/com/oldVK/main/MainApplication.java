@@ -1,4 +1,4 @@
-package com.socian_network.main;
+package com.oldVK.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
