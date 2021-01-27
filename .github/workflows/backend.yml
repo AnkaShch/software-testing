@@ -33,4 +33,4 @@ jobs:
       - name: Build with Maven
         run: mvn build
       - name: Test
-        run: maven test:db
+        run: maven -Dtest=DBTest test
