@@ -31,4 +31,4 @@ jobs:
         with:
           java-version: 11
       - name: Build with Maven
-        run: mvn clean test -DTest=DBTest
+        run: mvn clean test -Dtest=UnitTest
