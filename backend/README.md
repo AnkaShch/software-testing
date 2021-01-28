@@ -5,7 +5,7 @@
 * To perform registration [POST] - `/api/registration`
 * To perform authentication [POST] - `/api/login`
 
-#Allure Report
+# Allure Report
 
 Run:
 ```
