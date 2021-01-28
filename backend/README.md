@@ -6,7 +6,8 @@
 * To perform authentication [POST] - `/api/login`
 
 #Allure Report
-Run
+
+Run:
 ```
 mvn clean test
 mvn allure:serve
