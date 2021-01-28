@@ -4,3 +4,11 @@
 * To get posts to user [GET] - `/api/GetPosts?user_id=${user_id}`
 * To perform registration [POST] - `/api/registration`
 * To perform authentication [POST] - `/api/login`
+
+#Allure Report
+
+Run:
+```
+mvn clean test
+mvn allure:serve
+```
