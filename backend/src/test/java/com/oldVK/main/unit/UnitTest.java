@@ -1,12 +1,12 @@
 package com.oldVK.main.unit;
 
-import com.oldVK.main.dao.UserDao;
-import com.oldVK.main.dao.UserJdbcDao;
 import com.oldVK.main.models.User;
 import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.Assert.assertEquals;
 
+@SpringBootTest
 public class UnitTest {
     @Test
     public void testUser() {
